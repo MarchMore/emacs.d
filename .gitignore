@@ -1,0 +1,3 @@
+# ignore todo.org and backup files
+*~
+TODO.*
