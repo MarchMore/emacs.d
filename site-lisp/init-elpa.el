@@ -4,12 +4,12 @@
 			 ("melpa" . "http://melpa.milkbox.net/packages/")))
 
 ;;;; 设置默认安装包列表
-(defvar my-default-packages '(auctex
-			      auto-complete)
-  "setting default packages to be installed.")
-(dolist (package my-default-packages)
-  (when (not (package-installed-p package))
-    (package-install package))
+;; (defvar my-default-packages '(auctex
+;; 			      auto-complete)
+;;   "setting default packages to be installed.")
+;; (dolist (package my-default-packages)
+;;   (when (not (package-installed-p package))
+;;     (package-install package))
 
 ;;;; 加载全部已安装package
 (setq package-enable-at-startup nil)
