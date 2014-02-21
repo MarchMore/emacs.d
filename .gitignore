@@ -1,3 +1,4 @@
 # ignore todo.org and backup files
 *~
 readme.*
+.abbrev_defs
