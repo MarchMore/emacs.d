@@ -10,5 +10,6 @@
 
 (require 'init-elpa)
 (require 'init-misc)
+(require 'init-cc)
 
 
