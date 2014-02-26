@@ -3,17 +3,20 @@
                          ("marmalade" . "http://marmalade-repo.org/packages/")
 			 ("melpa" . "http://melpa.milkbox.net/packages/")))
 
-;;;; 设置默认安装包列表
-;; (defvar my-default-packages '(auctex
-;; 			      auto-complete)
-;;   "setting default packages to be installed.")
-;; (dolist (package my-default-packages)
-;;   (when (not (package-installed-p package))
-;;     (package-install package))
-
 ;;;; 加载全部已安装package
 (setq package-enable-at-startup nil)
 (package-initialize)
+
+;;;; 设置默认安装包列表
+(unless package-archive-contents
+  (package-refresh-contents))
+(defvar my-default-packages '(smart-compile
+			      )
+  "setting default packages to be installed.")
+(dolist (package my-default-packages)
+  (unless (package-installed-p package)
+    (package-install package)))
+
 
 (provide 'init-elpa)
 

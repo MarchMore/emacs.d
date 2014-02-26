@@ -8,8 +8,8 @@
 (add-to-list 'load-path (expand-file-name "site-lisp" user-emacs-directory))
 
 
-(require 'init-elpa)
 (require 'init-misc)
+(require 'init-elpa)
 (require 'init-cc)
 
 

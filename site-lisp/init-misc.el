@@ -35,6 +35,7 @@
 ;;;; 全局键绑定
 (global-set-key [f3] 'eshell)            ;f3切换到shell模式
 (global-set-key [f4] 'speedbar)          ;f4启用speedbar
+(global-set-key [f5] 'smart-compile)     ;智能编译
 (global-set-key "\C-x\C-b" 'buffer-menu) ;Rebind 'C-x C-b' for 'buffer-menu'
 
 
