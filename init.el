@@ -10,6 +10,7 @@
 
 (require 'init-misc)
 (require 'init-elpa)
+(require 'init-org)
 (require 'init-cc)
 
 
