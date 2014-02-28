@@ -10,7 +10,8 @@
 ;;;; 设置默认安装包列表
 (unless package-archive-contents
   (package-refresh-contents))
-(defvar my-default-packages '(dired+
+(defvar my-default-packages '(autopair
+			      dired+
 			      smart-compile
 			      )
   "setting default packages to be installed.")
