@@ -12,5 +12,5 @@
 (require 'init-elpa)
 (require 'init-org)
 (require 'init-cc)
-
+(require 'init-auto-complete)
 
