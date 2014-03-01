@@ -14,6 +14,8 @@
 
 ;; 汇编光标所在位置代码
 (require 'disaster)
+; 修改cxxflags变量，增加对c++11的支持
+(setq disaster-cxxflags (concat "-std=c++11 " disaster-cxxflags))
 (define-key c-mode-base-map (kbd "C-c d") 'disaster)
 
 
