@@ -12,6 +12,7 @@
   (package-refresh-contents))
 (defvar my-default-packages '(autopair
 			      dired+
+			      disaster
 			      smart-compile
 			      )
   "setting default packages to be installed.")
