@@ -3,6 +3,9 @@
 (autopair-global-mode t)
 
 
+;;;; 模板功能
+(require 'yasnippet)
+(yas-global-mode 1)
 
 
 (provide 'init-auto-complete)
