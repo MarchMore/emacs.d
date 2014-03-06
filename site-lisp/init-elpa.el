@@ -14,6 +14,7 @@
 			      dired+
 			      disaster
 			      smart-compile
+			      yasnippet
 			      )
   "setting default packages to be installed.")
 (dolist (package my-default-packages)
