@@ -12,6 +12,7 @@
   (package-refresh-contents))
 (defvar my-default-packages '(autopair
 			      auto-complete
+			      auto-complete-clang-async
 			      popup          ; auto-complete依赖
 			      dired+
 			      disaster
