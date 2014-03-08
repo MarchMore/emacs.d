@@ -5,7 +5,11 @@
 
 ;;;; 模板功能
 (require 'yasnippet)
-(yas-global-mode 1)
+(yas-global-mode t)
 
+
+;;;; auto-complete
+(require 'auto-complete)
+(global-auto-complete-mode t)
 
 (provide 'init-auto-complete)
