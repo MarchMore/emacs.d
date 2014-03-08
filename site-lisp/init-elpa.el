@@ -11,6 +11,8 @@
 (unless package-archive-contents
   (package-refresh-contents))
 (defvar my-default-packages '(autopair
+			      auto-complete
+			      popup          ; auto-complete依赖
 			      dired+
 			      disaster
 			      smart-compile
