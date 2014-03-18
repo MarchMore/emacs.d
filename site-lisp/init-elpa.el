@@ -16,6 +16,7 @@
 			      popup          ; auto-complete依赖
 			      dired+
 			      disaster
+			      js2-mode
 			      smart-compile
 			      yasnippet
 			      )
