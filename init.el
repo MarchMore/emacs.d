@@ -7,6 +7,8 @@
 
 (add-to-list 'load-path (expand-file-name "site-lisp" user-emacs-directory))
 
+(add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
+
 
 (require 'init-misc)
 (require 'init-elpa)
