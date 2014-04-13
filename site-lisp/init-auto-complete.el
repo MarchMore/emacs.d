@@ -15,7 +15,7 @@
 ;; c++代码使用clang-async分析补全
 (require 'auto-complete-clang-async)
 (defun ac-cc-mode-setup ()
-  (setq ac-clang-complete-executable "~/.emacs.d/clang-complete-for-ubuntu")
+  (setq ac-clang-complete-executable "~/.emacs.d/clang-complete")
   (setq ac-sources '(ac-source-clang-async))
   (ac-clang-launch-completion-process)
 )
