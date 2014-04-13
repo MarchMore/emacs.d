@@ -13,6 +13,7 @@
 (defvar my-default-packages '(autopair
 			      auto-complete
 			      auto-complete-clang-async
+			      ecb
 			      popup          ; auto-complete依赖
 			      dired+
 			      disaster
