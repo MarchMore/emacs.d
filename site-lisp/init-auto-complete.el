@@ -15,10 +15,15 @@
 ;; c++代码使用clang-async分析补全
 (require 'auto-complete-clang-async)
 (defun ac-cc-mode-setup ()
-  (setq ac-clang-complete-executable "~/.emacs.d/clang-complete")
+  (cond 
+   ((string-match "Debian" (version)) 
+    (setq ac-clang-complete-executable "~/.emacs.d/clang-complete-for-ubuntu"))
+   ((string-match "RedHat" (version))
+    (setq ac-clang-complete-executable "~/.emacs.d/clang-complete-for-fedora"))
+   )
   (setq ac-sources '(ac-source-clang-async))
   (ac-clang-launch-completion-process)
-)
+  )
 (defun my-ac-config ()
   (add-hook 'c-mode-common-hook 'ac-cc-mode-setup)
   (add-hook 'auto-complete-mode-hook 'ac-common-setup)
