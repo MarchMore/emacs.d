@@ -7,7 +7,7 @@
 
 ;; 自定义配置文件夹
 (add-to-list 'load-path (expand-file-name "site-lisp" user-emacs-directory))
-
+(require 'init-benchmarking) ;; Measure startup time
 
 (require 'init-misc)
 (require 'init-elpa)
