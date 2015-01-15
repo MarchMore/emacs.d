@@ -13,6 +13,7 @@
 (ac-config-default)             ; 简单的补全
 
 ;; c++代码使用clang-async分析补全
+;; https://github.com/Golevka/emacs-clang-complete-async
 (require 'auto-complete-clang-async)
 (defun ac-cc-mode-setup ()
   (cond 
