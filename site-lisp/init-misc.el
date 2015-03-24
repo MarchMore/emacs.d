@@ -1,6 +1,9 @@
 ;; 默认主题
 (load-theme 'tango-dark)
 
+;; 默认编码 UTF-8
+(setq default-buffer-file-coding-system  'utf-8-unix)
+
 ;; 显示列号
 (column-number-mode t)
 
