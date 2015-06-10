@@ -42,7 +42,7 @@
 (global-set-key "\C-x\C-b" 'buffer-menu) ;Rebind 'C-x C-b' for 'buffer-menu'
 
 ;; ido-mode
-(setq ido-mode t)
+(ido-mode t)
 
 
 (provide 'init-misc)
