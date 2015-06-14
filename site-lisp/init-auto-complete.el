@@ -2,6 +2,9 @@
 (require 'autopair)
 (autopair-global-mode t)
 
+;; smex 命令行自动补全
+(require 'smex)
+(global-set-key (kbd "M-x") 'smex)
 
 ;;;; 模板功能
 (require 'yasnippet)
