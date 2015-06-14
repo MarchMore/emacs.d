@@ -44,5 +44,9 @@
 ;; ido-mode
 (ido-mode t)
 
+;; smex
+(require 'smex)
+(global-set-key (kbd "M-x") 'smex)
+
 
 (provide 'init-misc)
