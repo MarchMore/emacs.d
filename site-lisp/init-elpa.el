@@ -19,6 +19,7 @@
 			      disaster
 			      js2-mode
 			      smart-compile
+			      smex
 			      yasnippet
 			      )
   "setting default packages to be installed.")
