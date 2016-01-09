@@ -10,8 +10,9 @@
 (require 'init-benchmarking) ;; Measure startup time
 
 (require 'init-misc)
-(require 'init-elpa)
 (require 'init-org)
+(require 'init-elpa)
+(require 'init-windows)
 (require 'init-cc)
 (require 'init-js)
 (require 'init-ecb)

@@ -20,6 +20,7 @@
 			      js2-mode
 			      smart-compile
 			      smex
+			      switch-window  ; switch-window
 			      yasnippet
 			      )
   "setting default packages to be installed.")
