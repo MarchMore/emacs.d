@@ -44,5 +44,7 @@
 ;; ido-mode
 (ido-mode t)
 
+;; server-mode
+(server-start)
 
 (provide 'init-misc)
