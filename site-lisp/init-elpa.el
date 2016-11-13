@@ -10,14 +10,16 @@
 ;;;; 设置默认安装包列表
 (unless package-archive-contents
   (package-refresh-contents))
-(defvar my-default-packages '(autopair
+(defvar my-default-packages '(auctex
+			      autopair
 			      auto-complete
 			      auto-complete-clang-async
-			      ecb
-			      popup          ; auto-complete依赖
 			      dired+
 			      disaster
+			      ecb
+			      exec-path-from-shell
 			      js2-mode
+			      popup          ; auto-complete依赖
 			      smart-compile
 			      smex
 			      switch-window  ; switch-window
@@ -27,6 +29,11 @@
 (dolist (package my-default-packages)
   (unless (package-installed-p package)
     (package-install package)))
+
+;;;; 特殊包设置
+;; Mac OS下设置PATH路径与终端保持一致
+(when (memq window-system '(mac ns))
+  (exec-path-from-shell-initialize))
 
 
 (provide 'init-elpa)
